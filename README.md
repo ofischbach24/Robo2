@@ -10,7 +10,7 @@ Download and install DHCP Server, and follow [This tutorial](https://youtu.be/oM
 # Motor Controller Pi
 Clone the repo into your Raspberry Pi with 
 ```bash
-git clone https://github.com/vcoppo23/Robocup.git
+git clone https://github.com/ofischbach24/Robo2.git
 ```
 
 install requirements.txt on the Raspberry Pis with
@@ -27,13 +27,6 @@ sudo raspi-config
 ```
 Using the arrow keys, go down and select "Interfacing Options," then select "I2C" and enable it
 
-# Camera Pi
-Visit [Camera Github](https://github.com/tmedina23/Robocup23-Cams) for more information on cameras
-
-Clone the above Repo into the Pi, plug in your 4 cameras, and run with "sudo python app.py." You can visit the cameras by putting the pi's address into your web browser. 
-
-## Usage:
-Run the camera pi and the motor controlling pi. If everything is correct you will be able to visit the flask server created by the motor controlling pi (192.168.1.X if you followed the above tutorial) and see all 4 cameras. Next, inspect the page and view the console, when you connect your controller it will start reading inputs and will tell you which mode you are in. 
 
 ### Emergency Shutdown:
 There is a big red button, if you click it, it will send 0% power to motors (not recommended).
@@ -48,18 +41,6 @@ Bumpers/Triggers move front flippers up/down.
 
 Up D-pad and triangle/Down-Dpad and X move back flippers up/down.
 
-### Turret Mode:
-Bumpers turn the turret
-
-Up/Down On Left Joystick moves the shoulder
-
-Up/Down On Right Joystick moves the elbow
-
-Up/Down D-Pad moves the forearm
-
-Triangle/X move the wrist
-
-Triggers open/close the claw
 
 ### Inspect Console Description:
 "No Input": No controller inputs are being read
@@ -71,7 +52,7 @@ Triggers open/close the claw
 "toggled": Switched between the 2 modes
 
 ### Switch Mode:
-Click on the Left D-Pad button, if it registers the input, "toggled" will appear.
+Click on the Left D-Pad button, if it registers the input, "toggled" will appear. *DONT DO THIS*
 
 NOTE: Be careful not to fat finger the toggle button while giving inputs, as if you switch the motor will continue to run. To make it stop, just switch back.
 
