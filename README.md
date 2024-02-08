@@ -52,7 +52,7 @@ Up D-pad and triangle/Down-Dpad and X move back flippers up/down.
 "toggled": Switched between the 2 modes
 
 ### Switch Mode:
-Click on the Left D-Pad button, if it registers the input, "toggled" will appear. *DONT DO THIS*
+Click on the Left D-Pad button, if it registers the input, "toggled" will appear. DONT DO THIS*
 
 NOTE: Be careful not to fat finger the toggle button while giving inputs, as if you switch the motor will continue to run. To make it stop, just switch back.
 
